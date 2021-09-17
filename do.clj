@@ -16,6 +16,7 @@
 
 (assert github-user "the envvar 'GITHUB_USER' is not set")
 (assert github-token "the envvar 'GITHUB_TOKEN' is not set")
+(assert github-org "the envvar 'GITHUB_ORG' is not set")
 
 (def auth-string (base64/encode-string (str github-user ":" github-token)))
 

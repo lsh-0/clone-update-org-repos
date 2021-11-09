@@ -17,7 +17,7 @@ optional:
 
 ## usage
 
-    GITHUB_USER=<username> GITHUB_TOKEN=<personal-access-token> GITHUB_ORG=some-org joker do.joker
+    GITHUB_USER=<username> GITHUB_TOKEN=<personal-access-token> GITHUB_ORG=some-org joker do.clj
 
 and optionally:
 

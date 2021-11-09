@@ -111,8 +111,6 @@
 
         archived-disabled (filter archived-disabled-fn results)
 
-        not-archived-disabled (remove archived-disabled-fn results)
-
         private (filter (fn [repo]
                           (get repo "private")) results)
 
@@ -132,7 +130,7 @@
     (println)
   
     (mapv print-repo archived-disabled)
-    (println (format "%d/%d archived/disabled" (count archived-disabled) total))
+    (println (format "%d/%d archived or disabled" (count archived-disabled) total))
     (println)
 
     (mapv print-repo private)
